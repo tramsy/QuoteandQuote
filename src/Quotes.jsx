@@ -18,7 +18,6 @@ const  Quotes = ()=> {
                 const response = await fetch('https://type.fit/api/quotes');
                 const data = await response.json();
 
-                console.log(data)
                 setQuoteDetails(data)
                 setQuotes(data)
                 setLoading(false)
